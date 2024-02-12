@@ -1,0 +1,12 @@
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.Domain\bin\Debug\net8.0\CarBookAPI.Domain.deps.json
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.Domain\bin\Debug\net8.0\CarBookAPI.Domain.dll
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.Domain\bin\Debug\net8.0\CarBookAPI.Domain.pdb
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.Domain\obj\Debug\net8.0\CarBookAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.Domain\obj\Debug\net8.0\CarBookAPI.Domain.AssemblyInfoInputs.cache
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.Domain\obj\Debug\net8.0\CarBookAPI.Domain.AssemblyInfo.cs
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.Domain\obj\Debug\net8.0\CarBookAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.Domain\obj\Debug\net8.0\CarBookAPI.Domain.sourcelink.json
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.Domain\obj\Debug\net8.0\CarBookAPI.Domain.dll
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.Domain\obj\Debug\net8.0\refint\CarBookAPI.Domain.dll
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.Domain\obj\Debug\net8.0\CarBookAPI.Domain.pdb
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.Domain\obj\Debug\net8.0\ref\CarBookAPI.Domain.dll
