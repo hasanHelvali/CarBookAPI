@@ -3,9 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{3C426B1F-03A5-4E48-9FA9-3D345E91A6C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBookAPI.Domain", "CarBookAPI.Domain\CarBookAPI.Domain.csproj", "{076FA26E-801E-4850-B2D2-135C879ECFB7}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{076FA26E-801E-4850-B2D2-135C879ECFB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{076FA26E-801E-4850-B2D2-135C879ECFB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{076FA26E-801E-4850-B2D2-135C879ECFB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{076FA26E-801E-4850-B2D2-135C879ECFB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{076FA26E-801E-4850-B2D2-135C879ECFB7} = {3C426B1F-03A5-4E48-9FA9-3D345E91A6C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {642825C4-86F9-4D0F-8698-B1E2EA9DBC8F}
