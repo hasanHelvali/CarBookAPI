@@ -21,6 +21,7 @@ namespace CarBookAPI.Application.Features.CQRS.Queries.Brand.GetBrandById
             var values = await _repository.GetByIdAsync(request.ID);
             return new GetBrandByIdQueryResponse
             {
+                
                 BrandID = values.BrandID,
                 Name = values.Name,
             };

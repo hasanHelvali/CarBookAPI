@@ -10,21 +10,42 @@ using CarBookAPI.Application.Features.CQRS.Commands.Banner.UpdateBanner;
 using CarBookAPI.Application.Features.CQRS.Commands.Brand.CreateBrandCommand;
 using CarBookAPI.Application.Features.CQRS.Commands.Brand.RemoveBrandCommand;
 using CarBookAPI.Application.Features.CQRS.Commands.Brand.UpdateBrandCommand;
+using CarBookAPI.Application.Features.CQRS.Commands.Car.CreateCar;
+using CarBookAPI.Application.Features.CQRS.Commands.Car.RemoveCar;
+using CarBookAPI.Application.Features.CQRS.Commands.Car.UpdateCar;
+using CarBookAPI.Application.Features.CQRS.Commands.Category.CreateCategory;
+using CarBookAPI.Application.Features.CQRS.Commands.Category.RemoveCategory;
+using CarBookAPI.Application.Features.CQRS.Commands.Category.UpdateCategory;
+using CarBookAPI.Application.Features.CQRS.Commands.Contact.CreateContact;
+using CarBookAPI.Application.Features.CQRS.Commands.Contact.RemoveContact;
+using CarBookAPI.Application.Features.CQRS.Commands.Contact.UpdateContact;
 using CarBookAPI.Application.Features.CQRS.Queries.About.GetAbout;
 using CarBookAPI.Application.Features.CQRS.Queries.About.GetAboutById;
 using CarBookAPI.Application.Features.CQRS.Queries.Banner.GetBanner;
 using CarBookAPI.Application.Features.CQRS.Queries.Banner.GetBannerById;
 using CarBookAPI.Application.Features.CQRS.Queries.Brand.GetBrand;
 using CarBookAPI.Application.Features.CQRS.Queries.Brand.GetBrandById;
+using CarBookAPI.Application.Features.CQRS.Queries.Car.GetCar;
+using CarBookAPI.Application.Features.CQRS.Queries.Car.GetCarById;
+using CarBookAPI.Application.Features.CQRS.Queries.Category.GetCategory;
+using CarBookAPI.Application.Features.CQRS.Queries.Category.GetCategoryById;
+using CarBookAPI.Application.Features.CQRS.Queries.Contact.GetContact;
+using CarBookAPI.Application.Features.CQRS.Queries.Contact.GetContactById;
+using CarBookAPI.Application.Features.CQRS.Queries.GetCarWithBrand;
 using CarBookAPI.Application.Interfaces;
+using CarBookAPI.Application.Interfaces.CarInterfaces;
 using CarBookAPI.Persistence.Context;
 using CarBookAPI.Persistence.Repositories;
+using CarBookAPI.Persistence.Repositories.CarRepositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<CarBookContext>();
-//builder.Services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
-builder.Services.AddScoped(CarBookAPI.Application.Interfaces.IRepository, CarBookAPI.Persistence.Repositories.Repository);
+//builder.Services.AddSingleton<CarBookContext>();
+
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped(typeof(ICarRepository), typeof(CarRepository));
+
 builder.Services.AddScoped<GetAboutQueryHandler>();
 builder.Services.AddScoped<GetAboutByIdQueryHandler>();
 builder.Services.AddScoped<CreateAboutCommandHandler>();
@@ -42,6 +63,26 @@ builder.Services.AddScoped<GetBrandByIdQueryHandler>();
 builder.Services.AddScoped<CreateBrandCommandHandler>();
 builder.Services.AddScoped<UpdateBrandCommandHandler>();
 builder.Services.AddScoped<RemoveBrandCommandHandler>();
+
+builder.Services.AddScoped<GetCarQueryHandler>();
+builder.Services.AddScoped<GetCarByIdQueryHandler>();
+builder.Services.AddScoped<CreateCarCommandHandler>();
+builder.Services.AddScoped<UpdateCarCommandHandler>();
+builder.Services.AddScoped<RemoveCarCommandHandler>();
+builder.Services.AddScoped<GetCarWithBrandQueryHandler>();
+
+builder.Services.AddScoped<GetCategoryQueryHandler>();
+builder.Services.AddScoped<GetCategoryByIdQueryHandler>();
+builder.Services.AddScoped<CreateCategoryCommandHandler>();
+builder.Services.AddScoped<UpdateCategoryCommandHandler>();
+builder.Services.AddScoped<RemoveCategoryCommandHandler>();
+
+builder.Services.AddScoped<GetContactQueryHandler>();
+builder.Services.AddScoped<GetContactByIdQueryHandler>();
+builder.Services.AddScoped<CreateContactCommandHandler>();
+builder.Services.AddScoped<UpdateContactCommandHandler>();
+builder.Services.AddScoped<RemoveContactCommandHandler>();
+
 // Add services to the container.
 
 builder.Services.AddControllers();

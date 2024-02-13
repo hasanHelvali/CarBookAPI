@@ -1,11 +1,7 @@
-﻿using CarBookAPI.Application.Features.CQRS.Commands.About.CreateAbout;
-using CarBookAPI.Application.Features.CQRS.Commands.About.RemoveAbout;
-using CarBookAPI.Application.Features.CQRS.Commands.About.UpdateAbout;
+﻿
 using CarBookAPI.Application.Features.CQRS.Commands.Brand.CreateBrandCommand;
 using CarBookAPI.Application.Features.CQRS.Commands.Brand.RemoveBrandCommand;
 using CarBookAPI.Application.Features.CQRS.Commands.Brand.UpdateBrandCommand;
-using CarBookAPI.Application.Features.CQRS.Queries.About.GetAbout;
-using CarBookAPI.Application.Features.CQRS.Queries.About.GetAboutById;
 using CarBookAPI.Application.Features.CQRS.Queries.Brand.GetBrand;
 using CarBookAPI.Application.Features.CQRS.Queries.Brand.GetBrandById;
 using Microsoft.AspNetCore.Http;
@@ -23,11 +19,9 @@ namespace CarBookAPI.WEBAPI.Controllers
         private readonly UpdateBrandCommandHandler _updateBrandCommandHandler;
         private readonly RemoveBrandCommandHandler _removeBrandCommandHandler;
 
-        public BrandController(GetBrandQueryHandler getBrandQueryHandler,
-            GetBrandByIdQueryHandler getBrandByIdQueryHandler, 
-
-            CreateBrandCommandHandler createBrandCommandHandler, 
-            UpdateBrandCommandHandler updateBrandCommandHandler, 
+        public BrandController(GetBrandQueryHandler getBrandQueryHandler, 
+            GetBrandByIdQueryHandler getBrandByIdQueryHandler, CreateBrandCommandHandler
+            createBrandCommandHandler, UpdateBrandCommandHandler updateBrandCommandHandler,
             RemoveBrandCommandHandler removeBrandCommandHandler)
         {
             _getBrandQueryHandler = getBrandQueryHandler;
@@ -48,7 +42,7 @@ namespace CarBookAPI.WEBAPI.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetBrand(int id)
         {
-            var value = _getBrandByIdQueryHandler.Handle(new GetBrandByIdQueryRequest(id));
+            var value =await _getBrandByIdQueryHandler.Handle(new GetBrandByIdQueryRequest(id));
             return Ok(value);
         }
         [HttpPost]
