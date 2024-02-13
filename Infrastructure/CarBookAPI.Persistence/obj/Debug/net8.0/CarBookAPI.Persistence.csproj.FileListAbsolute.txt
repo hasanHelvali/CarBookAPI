@@ -16,3 +16,5 @@ C:\Users\Hasan_Helvali\Desktop\CarBookAPI\Infrastructure\CarBookAPI.Persistence\
 C:\Users\Hasan_Helvali\Desktop\CarBookAPI\Infrastructure\CarBookAPI.Persistence\obj\Debug\net8.0\CarBookAPI.Persistence.pdb
 C:\Users\Hasan_Helvali\Desktop\CarBookAPI\Infrastructure\CarBookAPI.Persistence\obj\Debug\net8.0\CarBookAPI.Persistence.genruntimeconfig.cache
 C:\Users\Hasan_Helvali\Desktop\CarBookAPI\Infrastructure\CarBookAPI.Persistence\obj\Debug\net8.0\ref\CarBookAPI.Persistence.dll
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\Infrastructure\CarBookAPI.Persistence\bin\Debug\net8.0\CarBookAPI.Application.dll
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\Infrastructure\CarBookAPI.Persistence\bin\Debug\net8.0\CarBookAPI.Application.pdb

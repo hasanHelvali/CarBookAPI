@@ -32,7 +32,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Hasan_Helvali\\Desktop\\CarBookAPI\\CarBookAPI.Domain\\CarBookAPI.Domain.csproj": {
+                "projectPath": "C:\\Users\\Hasan_Helvali\\Desktop\\CarBookAPI\\CarBookAPI.Domain\\CarBookAPI.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
