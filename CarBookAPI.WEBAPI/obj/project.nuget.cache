@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tjdkFMA8e9v9bLcTMMg4o87NQfpJgD8dt3QwudX0WfqTdSgLhqElQ1i4bCaq4zXBTXof0IfDON8+oxT6bNH6Gg==",
+  "dgSpecHash": "M+7qV3ifQB4HJ/U4Gnv1qx0OEX+uKrxUMR5hZdgvipI+ZxlalMVM8QKjwKwYa6miOhb5EHaICMx62wYUh+EFsQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hasan_Helvali\\Desktop\\CarBookAPI\\CarBookAPI.WEBAPI\\CarBookAPI.WEBAPI.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",

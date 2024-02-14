@@ -141,3 +141,6 @@ C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.WEBAPI\bin\Debug\net8.0\Car
 C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.WEBAPI\bin\Debug\net8.0\CarBookAPI.Domain.pdb
 C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.WEBAPI\bin\Debug\net8.0\CarBookAPI.Application.dll
 C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.WEBAPI\bin\Debug\net8.0\CarBookAPI.Application.pdb
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.WEBAPI\bin\Debug\net8.0\MediatR.dll
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.WEBAPI\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\Hasan_Helvali\Desktop\CarBookAPI\CarBookAPI.WEBAPI\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

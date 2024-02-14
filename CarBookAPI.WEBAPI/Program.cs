@@ -34,6 +34,7 @@ using CarBookAPI.Application.Features.CQRS.Queries.Contact.GetContactById;
 using CarBookAPI.Application.Features.CQRS.Queries.GetCarWithBrand;
 using CarBookAPI.Application.Interfaces;
 using CarBookAPI.Application.Interfaces.CarInterfaces;
+using CarBookAPI.Application.Services;
 using CarBookAPI.Persistence.Context;
 using CarBookAPI.Persistence.Repositories;
 using CarBookAPI.Persistence.Repositories.CarRepositories;
@@ -83,6 +84,8 @@ builder.Services.AddScoped<CreateContactCommandHandler>();
 builder.Services.AddScoped<UpdateContactCommandHandler>();
 builder.Services.AddScoped<RemoveContactCommandHandler>();
 
+
+builder.Services.AddApplicationService(builder.Configuration);
 // Add services to the container.
 
 builder.Services.AddControllers();

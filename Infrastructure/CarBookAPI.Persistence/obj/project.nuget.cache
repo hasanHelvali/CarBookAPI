@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ixjaTxvaniNKgBbalR64OTATw0rvS7oOwBziArHl7YWkx0RjJi+r+cW6uatC944B0eyRR7EcFZ/gPvnR4b3mrA==",
+  "dgSpecHash": "Va/vZF/atonAKWIeWDIxbnhTzFXjMqj48VgQA+1odgKMdDLP0TxpVjqlWeWKzWaS5W769iINFmIh9vSYCjowVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hasan_Helvali\\Desktop\\CarBookAPI\\Infrastructure\\CarBookAPI.Persistence\\CarBookAPI.Persistence.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.1\\microsoft.entityframeworkcore.tools.8.0.1.nupkg.sha512",
     "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
