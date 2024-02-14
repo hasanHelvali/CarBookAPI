@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "0w09QHbpdPm/P8yphc0opQFEDGG1pyik87ePZ1cihmhJlYl6W4qfqVaxEe8w21QQcea9Le/zIXb0fgPzVrYkGA==",
+  "dgSpecHash": "Icfqp2wyICD8JYDQRXmNcIHo8inbf6abf7gynpvhStZkOdkWsUy5eRkkNSyGWg8RnMW3G4JVDahGmzSdPD5cqg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hasan_Helvali\\Desktop\\CarBookAPI\\CarBookAPI.Application\\CarBookAPI.Application.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "C:\\Users\\Hasan_Helvali\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.2.0 was resolved.",
+      "libraryId": "MediatR",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
