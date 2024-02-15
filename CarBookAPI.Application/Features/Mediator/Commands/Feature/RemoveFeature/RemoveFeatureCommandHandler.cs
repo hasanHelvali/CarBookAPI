@@ -11,16 +11,16 @@ namespace CarBookAPI.Application.Features.Mediator.Commands.Feature.RemoveFeatur
 {
     public class RemoveFeatureCommandHandler : IRequestHandler<RemoveFeatureCommandRequest>
     {
-        private readonly IRepository<Feature> _repository;
+        private readonly IRepository<Domain.Entities.Feature> _repository;
 
-        public RemoveFeatureCommandHandler(IRepository<Feature> repository)
+        public RemoveFeatureCommandHandler(IRepository<Domain.Entities.Feature> repository)
         {
             _repository = repository;
         }
 
         public async Task Handle(RemoveFeatureCommandRequest request, CancellationToken cancellationToken)
         {
-            Feature feature = await _repository.GetByIdAsync(request.ID);
+            Domain.Entities.Feature feature = await _repository.GetByIdAsync(request.ID);
             await _repository.RemoveAsync(feature);
         }
     }

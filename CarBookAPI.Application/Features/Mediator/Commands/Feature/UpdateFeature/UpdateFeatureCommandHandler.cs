@@ -11,9 +11,9 @@ namespace CarBookAPI.Application.Features.Mediator.Commands.Feature.UpdateFeatur
 {
     public class UpdateFeatureCommandHandler : IRequestHandler<UpdateFeatureCommandRequest, UpdateFeatureCommandResponse>
     {
-        private readonly IRepository<Feature> _repository;
+        private readonly IRepository<Domain.Entities.Feature> _repository;
 
-        public UpdateFeatureCommandHandler(IRepository<Feature> repository)
+        public UpdateFeatureCommandHandler(IRepository<Domain.Entities.Feature> repository)
         {
             _repository = repository;
         }

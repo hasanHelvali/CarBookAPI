@@ -11,9 +11,9 @@ namespace CarBookAPI.Application.Features.Mediator.Queries.Feature.GetFeatureByI
 {
     public class GetFeatureByIdQueryHandler : IRequestHandler<GetFeatureByIdQueryRequest, GetFeatureByIdQueryResponse>
     {
-        private readonly IRepository<Feature> _repository;
+        private readonly IRepository<Domain.Entities.Feature> _repository;
 
-        public GetFeatureByIdQueryHandler(IRepository<Feature> repository)
+        public GetFeatureByIdQueryHandler(IRepository<Domain.Entities.Feature> repository)
         {
             _repository = repository;
         }

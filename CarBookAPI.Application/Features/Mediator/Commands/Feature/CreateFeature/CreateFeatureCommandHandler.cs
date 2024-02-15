@@ -11,16 +11,16 @@ namespace CarBookAPI.Application.Features.Mediator.Commands.Feature.CreateFeatur
 {
     public class CreateFeatureCommandHandler : IRequestHandler<CreateFeatureCommandRequest, CreateFeatureCommandResponse>
     {
-        private readonly IRepository<Feature> _repository;
+        private readonly IRepository<Domain.Entities.Feature> _repository;
 
-        public CreateFeatureCommandHandler(IRepository<Feature> repository)
+        public CreateFeatureCommandHandler(IRepository<Domain.Entities.Feature> repository)
         {
             _repository = repository;
         }
 
         public async Task<CreateFeatureCommandResponse> Handle(CreateFeatureCommandRequest request, CancellationToken cancellationToken)
         {
-            await _repository.CreateAsync(new Feature
+            await _repository.CreateAsync(new Domain.Entities.Feature
             {
                 Name = request.Name,
             });

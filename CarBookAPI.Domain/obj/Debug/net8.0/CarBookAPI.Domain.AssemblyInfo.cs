@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CarBookAPI.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f12c9ba7e05f06a8a53ce251fd377bbc8ae533d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff4ecfec852784bb2fffce465d9db8efd7e70fc0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CarBookAPI.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CarBookAPI.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

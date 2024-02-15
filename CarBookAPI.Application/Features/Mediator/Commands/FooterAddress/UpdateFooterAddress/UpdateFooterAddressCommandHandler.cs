@@ -24,7 +24,6 @@ namespace CarBookAPI.Application.Features.Mediator.Commands.FooterAddress.Update
             value.Phone=request.Phone;
             value.Description=request.Description;
             value.Email=request.Email;
-            //value.FooterAddressId = request.FooterAddressID;
             await _repository.UpdateAsync(value);
             return;
         }
