@@ -1,9 +1,9 @@
 ﻿using CarBookAPI.Application.Features.CQRS.Commands.About.RemoveAbout;
-using CarBookAPI.Application.Features.Mediator.Commands.CreateFeature;
-using CarBookAPI.Application.Features.Mediator.Commands.RemoveFeature;
-using CarBookAPI.Application.Features.Mediator.Commands.UpdateFeature;
-using CarBookAPI.Application.Features.Mediator.Queries.GetFeature;
-using CarBookAPI.Application.Features.Mediator.Queries.GetFeatureById;
+using CarBookAPI.Application.Features.Mediator.Commands.Feature.CreateFeature;
+using CarBookAPI.Application.Features.Mediator.Commands.Feature.RemoveFeature;
+using CarBookAPI.Application.Features.Mediator.Commands.Feature.UpdateFeature;
+using CarBookAPI.Application.Features.Mediator.Queries.Feature.GetFeature;
+using CarBookAPI.Application.Features.Mediator.Queries.Feature.GetFeatureById;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
