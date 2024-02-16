@@ -83,7 +83,9 @@ builder.Services.AddScoped<GetContactByIdQueryHandler>();
 builder.Services.AddScoped<CreateContactCommandHandler>();
 builder.Services.AddScoped<UpdateContactCommandHandler>();
 builder.Services.AddScoped<RemoveContactCommandHandler>();
-
+builder.Services.AddCors(configuration =>configuration.AddDefaultPolicy(policiy=>
+    policiy.WithOrigins("http://localhost:4200", "https://localhost:4200")
+    .AllowAnyHeader().AllowAnyMethod().AllowCredentials()));
 
 builder.Services.AddApplicationService(builder.Configuration);
 // Add services to the container.
@@ -102,6 +104,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

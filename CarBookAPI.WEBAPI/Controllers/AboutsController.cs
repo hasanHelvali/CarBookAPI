@@ -45,7 +45,7 @@ namespace CarBookAPI.WEBAPI.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetAbout(int id)
         {
-            var value =await _getAboutByIdQueryHandler.Handle(new GetAboutByIdQueryRequest(id));
+            var value = await _getAboutByIdQueryHandler.Handle(new GetAboutByIdQueryRequest(id));
             return Ok(value);
         }
         [HttpPost]
@@ -62,7 +62,7 @@ namespace CarBookAPI.WEBAPI.Controllers
             return Ok("Hakkımda Bilgisi Güncellendi.");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> RemoveAbout(int id)
         {
             await _removeAboutCommandHandler.Handle(new RemoveAboutCommandRequest(id));
