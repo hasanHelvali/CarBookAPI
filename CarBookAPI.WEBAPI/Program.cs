@@ -33,10 +33,12 @@ using CarBookAPI.Application.Features.CQRS.Queries.Contact.GetContact;
 using CarBookAPI.Application.Features.CQRS.Queries.Contact.GetContactById;
 using CarBookAPI.Application.Features.CQRS.Queries.GetCarWithBrand;
 using CarBookAPI.Application.Interfaces;
+using CarBookAPI.Application.Interfaces.BlogInterfaces;
 using CarBookAPI.Application.Interfaces.CarInterfaces;
 using CarBookAPI.Application.Services;
 using CarBookAPI.Persistence.Context;
 using CarBookAPI.Persistence.Repositories;
+using CarBookAPI.Persistence.Repositories.BlogRepositories;
 using CarBookAPI.Persistence.Repositories.CarRepositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -83,6 +85,9 @@ builder.Services.AddScoped<GetContactByIdQueryHandler>();
 builder.Services.AddScoped<CreateContactCommandHandler>();
 builder.Services.AddScoped<UpdateContactCommandHandler>();
 builder.Services.AddScoped<RemoveContactCommandHandler>();
+
+builder.Services.AddScoped<IBlogRepository,BlogRepository>();
+
 builder.Services.AddCors(configuration =>configuration.AddDefaultPolicy(policiy=>
     policiy.WithOrigins("http://localhost:4200", "https://localhost:4200")
     .AllowAnyHeader().AllowAnyMethod().AllowCredentials()));

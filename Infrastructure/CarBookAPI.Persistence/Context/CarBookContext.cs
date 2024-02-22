@@ -35,6 +35,9 @@ namespace CarBookAPI.Persistence.Context
         public DbSet<Service> Services{ get; set; }
         public DbSet<SocialMedia> SocialMedias{ get; set; }
         public DbSet<Testimonial> Testimonials{ get; set; }
+        public DbSet<Author> Authors{ get; set; }
+        public DbSet<Blog> Blogs { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Data Source=HASANHELVALI;Initial Catalog=CarBookDB;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
