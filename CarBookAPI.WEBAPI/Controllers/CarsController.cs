@@ -5,6 +5,7 @@ using CarBookAPI.Application.Features.CQRS.Queries.Car.GetCar;
 using CarBookAPI.Application.Features.CQRS.Queries.Car.GetCarById;
 using CarBookAPI.Application.Features.CQRS.Queries.GetCarWithBrand;
 using CarBookAPI.Application.Features.Mediator.Queries.Car.Get5LastCarsWithBrand;
+using CarBookAPI.Application.Features.Mediator.Queries.Car.GetCarWithPricing;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -88,6 +89,8 @@ namespace CarBookAPI.WEBAPI.Controllers
             List<GetLast5CarsWithBrandQueryResponse>getLast5CarsWithBrandQueryResponse  = await _mediator.Send(new GetLast5CarsWithBrandQueryRequest());
             return Ok(getLast5CarsWithBrandQueryResponse);
         }
+
+
     }
 }
 
