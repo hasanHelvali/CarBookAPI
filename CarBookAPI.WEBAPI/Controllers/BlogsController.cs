@@ -3,6 +3,7 @@ using CarBookAPI.Application.Features.Mediator.Commands.Blog.RemoveBlog;
 using CarBookAPI.Application.Features.Mediator.Commands.Blog.UpdateBlog;
 using CarBookAPI.Application.Features.Mediator.Queries.Blog.GetAllBlogsWithAuthor;
 using CarBookAPI.Application.Features.Mediator.Queries.Blog.GetBlog;
+using CarBookAPI.Application.Features.Mediator.Queries.Blog.GetBlogByAuthorId;
 using CarBookAPI.Application.Features.Mediator.Queries.Blog.GetBlogById;
 using CarBookAPI.Application.Features.Mediator.Queries.Blog.GetLast3BlogsWithAuthors;
 using MediatR;
@@ -66,5 +67,15 @@ namespace CarBookAPI.WEBAPI.Controllers
             var values = await _mediator.Send(new GetAllBlogsWithAuthorQueryRequest());
             return Ok(values);
         }
+
+        [HttpGet("GetBlogByAuthorIdList/{id}")]
+        public async Task<IActionResult> GetBlogByAuthorId(int id)
+        {
+            var values = await _mediator.Send(new GetBlogByAuthorIdQueryRequest(id));
+            return Ok(values);
+        }
+
+
+
     }
 }

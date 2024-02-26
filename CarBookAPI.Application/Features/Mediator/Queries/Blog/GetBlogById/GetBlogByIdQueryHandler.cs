@@ -21,7 +21,7 @@ namespace CarBookAPI.Application.Features.Mediator.Queries.Blog.GetBlogById
         {
 
             var value = await _repository.GetByIdAsync(request.ID);
-            return new GetBlogByIdQueryResponse
+            return new GetBlogByIdQueryResponse()
             {
                 AuthorID = value.AuthorID,
                 Title = value.Title,

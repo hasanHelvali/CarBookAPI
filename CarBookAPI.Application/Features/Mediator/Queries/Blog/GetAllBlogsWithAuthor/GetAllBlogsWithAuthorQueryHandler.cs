@@ -30,7 +30,9 @@ namespace CarBookAPI.Application.Features.Mediator.Queries.Blog.GetAllBlogsWithA
                 CoverImageUrl=x.CoverImageUrl,
                 CreatedDate=x.CreatedDate,
                 Description=x.Description,
-                Title=x.Title
+                Title=x.Title,
+                AuthorDescription=x.Author.Description,
+                AuthorImageUrl=x.Author.ImageUrl,
             }).ToList();
         }
     }
