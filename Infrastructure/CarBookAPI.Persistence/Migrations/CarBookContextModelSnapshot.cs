@@ -294,6 +294,35 @@ namespace CarBookAPI.Persistence.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("CarBookAPI.Domain.Entities.Comment", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int>("BlogID")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("BlogID");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("CarBookAPI.Domain.Entities.Contact", b =>
                 {
                     b.Property<int>("ContactID")
@@ -464,7 +493,7 @@ namespace CarBookAPI.Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
-                    b.Property<int>("BlogID")
+                    b.Property<int>("BlogId")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
@@ -473,7 +502,7 @@ namespace CarBookAPI.Persistence.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("BlogID");
+                    b.HasIndex("BlogId");
 
                     b.ToTable("TagClouds");
                 });
@@ -586,11 +615,22 @@ namespace CarBookAPI.Persistence.Migrations
                     b.Navigation("Pricing");
                 });
 
+            modelBuilder.Entity("CarBookAPI.Domain.Entities.Comment", b =>
+                {
+                    b.HasOne("CarBookAPI.Domain.Entities.Blog", "Blog")
+                        .WithMany("Comments")
+                        .HasForeignKey("BlogID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Blog");
+                });
+
             modelBuilder.Entity("CarBookAPI.Domain.Entities.TagCloud", b =>
                 {
                     b.HasOne("CarBookAPI.Domain.Entities.Blog", "Blog")
                         .WithMany("TagClouds")
-                        .HasForeignKey("BlogID")
+                        .HasForeignKey("BlogId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -604,6 +644,8 @@ namespace CarBookAPI.Persistence.Migrations
 
             modelBuilder.Entity("CarBookAPI.Domain.Entities.Blog", b =>
                 {
+                    b.Navigation("Comments");
+
                     b.Navigation("TagClouds");
                 });
 
